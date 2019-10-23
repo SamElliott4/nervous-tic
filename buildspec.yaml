@@ -12,4 +12,4 @@ phases:
         - ng build --prod --aot
     post_build:
       commands:
-        - aws s3 cp dist/RPAS s3://pointforce.com --recursive
+        - aws s3 cp dist/RPAS s3://nervous-tic --recursive
