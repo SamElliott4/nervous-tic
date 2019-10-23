@@ -9,7 +9,7 @@ phases:
       - npm install --save-dev @angular-devkit/build-angular
     build:
       commands:
-        - ng build --prod --aot
+        - ng build --prod
     post_build:
       commands:
-        - aws s3 cp dist/RPAS s3://nervous-tic --recursive
+        - aws s3 cp dist/nervous-tic s3://nervous-tic --recursive
