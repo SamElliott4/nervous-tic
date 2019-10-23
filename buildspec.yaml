@@ -12,4 +12,5 @@ phases:
         - ng build --prod
     post_build:
       commands:
+        - ls dist
         - aws s3 cp dist/nervous-tic s3://nervous-tic --recursive
