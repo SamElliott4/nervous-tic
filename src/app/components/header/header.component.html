@@ -1,0 +1,25 @@
+<style>
+  .nav-bar{
+      display:flex;
+      flex-direction:row;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      height:100%;
+      width:100%;
+  }
+  .item{
+    align-self:flex-start;
+    height: 100%;
+    display:block;
+    color: white;
+    flex: 0 0 150px; 
+    height:100%;
+    
+    align-items: center;
+  }
+  .item:hover{
+      background-color: #666666;
+  }
+</style>
+<ul class="nav-bar"><app-nav-item class="item" *ngFor="let item of navItems" [props]="item"></app-nav-item></ul>
